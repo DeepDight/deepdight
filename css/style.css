@@ -1,0 +1,126 @@
+/* reset */
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+  
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+  
+ol, ul {
+	list-style: none;
+}
+  
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* reset */
+
+body,html {
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:hsla(149,19%,91%,1);
+    background-image:
+            radial-gradient(at 10% 8%, hsla(211,19%,92%,1) 0px, transparent 50%),
+            radial-gradient(at 71% 48%, hsla(195,41%,95%,1) 0px, transparent 50%),
+            radial-gradient(at 24% 7%, hsla(203,42%,91%,1) 0px, transparent 50%),
+            radial-gradient(at 84% 86%, hsla(180,46%,94%,1) 0px, transparent 50%),
+            radial-gradient(at 36% 83%, hsla(202,26%,90%,1) 0px, transparent 50%),
+            radial-gradient(at 8% 83%, hsla(206,31%,91%,1) 0px, transparent 50%),
+            radial-gradient(at 90% 21%, hsla(219,42%,92%,1) 0px, transparent 50%);
+
+}
+
+/* основные стили */
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+}
+
+.canvasContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	margin-bottom: 15px;
+	font-size: 48px;
+	font-weight: 500;
+	color: rgb(15 23 42);
+}
+
+.collapse {
+	margin-top: 25px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 20px;
+	
+	background-color: rgb(38 38 38);
+
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+
+	transition: all 0.1s ease-in;
+}
+
+/* псевдокласc .nameclass:namesubclass */
+.collapse:active {
+	transform: scale(0.90);
+}
+
+.collapse:hover {
+	cursor: pointer;
+}
+
+.myCanvasWrapper {
+	padding: 16px;
+	background-color: rgb(249 250 251);
+	border-radius: 16px;
+	box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.myCanvas {
+	border: 1px solid rgb(209 213 219);
+	border-radius: 16px;
+	background-color: inherit;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	max-width: 450px;
+	width: 100%;
+	margin-left: 40px;
+
+}
+
+.about__title {
+	margin-bottom: 10px;
+	font-size: 30px;
+	font-weight: 500;
+	color: rgb(15 23 42);
+}
+
+.about__content {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgb(71 85 105);
+}
