@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- google fonts -->
+	<link rel="stylesheet" href="/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+	<title>Фокин Платон</title>
+</head>
+<body>
+	<div id="app" class="app">
+		<div class="canvasContainer">
+			<h1 class="title">Пересечение прямых</h1>
+			<div class="myCanvasWrapper">
+				<canvas class="myCanvas" width="600px" height="600px"></canvas>
+			</div>
+			<button type="button" class="collapse">Collapse</button>
+		</div>
+
+		<div class="about">
+			<h3 class="about__title">Описание проекта:</h1>
+			<p class="about__content">
+				При помощи тега canvas был написан скрипт, который позволяет рисовать отрезки на холсте. На месте пресечения отрезков рисуется красная точка. При каждом движении мыши по холсту происходит "перерисовка" canvas. Благодаря такой логики мы можем наблюдать точно место нахождения точки пересечения. При нажатии на кнопку collapse выполняется анимация которая, сжимает каждый отрезок на холсте. В классе были описаны все методы которые обрабатывают взаимодействие с canvas, а также описаны методы отрисовки линии и точи.
+			</p>
+		</div>
+	</div>
+
+	<!-- js -->
+	<script src="/script.js"></script>
+</body>
+</html>
+
